@@ -1,0 +1,35 @@
+---
+import Navbar from '../components/navbar.astro';
+import Button from '../components/button.astro';
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/container.astro';
+import { ArrowDownIcon } from '@radix-ui/react-icons'
+---
+
+<Layout title="Industrias Carnicas DMarca">
+	<header class="bg-header-home h-screen flex flex-col items-center">
+		<Navbar/>
+        <Container class:list={["h-[calc(100vh-90px-120px)] flex flex-col items-center justify-center text-white text-center"]}>
+            <h2>Industrias Cárnicas</h2>
+            <h1 class="text-7xl font-bold sm:text-8xl">DMARCA</h1>
+            <p>El sabor de la tradición española</p>
+            <br>
+            <div class="flex items-center gap-2">
+                <a href="https://tienda.carnicasdmarca.com" target="_blank" rel="noopener noreferrer">
+                    <Button class:list={["hover:bri"]}>
+                        Tienda
+                    </Button>
+                </a>
+                <a href="https://tienda.carnicasdmarca.com" target="_blank" rel="noopener noreferrer">
+                    <Button class:list={["bg-red-600 text-white hover:brightness-110"]}>
+                        Nuestros productos
+                    </Button>
+                </a>
+            </div>
+        </Container>
+        <button class="text-white w-12 h-12 bg-white/20 rounded-full flex items-center justify-center transition-transform hover:scale-110">
+            <ArrowDownIcon width={"24px"} height={"24px"} />
+        </button>
+    </header>
+</Layout>
+	
