@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"header-home": "linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.80)), url('/background-header.webp')"
+				"header-home": "linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.80)), url('/background-header.webp')",
+				"about-home": "linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('/background-about.jpeg')"
 			}
 		},
 	},

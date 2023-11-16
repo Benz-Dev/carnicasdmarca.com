@@ -1,35 +1,73 @@
 ---
-import Navbar from '../components/navbar.astro';
-import Button from '../components/button.astro';
-import Layout from '../layouts/Layout.astro';
-import Container from '../components/container.astro';
-import { ArrowDownIcon } from '@radix-ui/react-icons'
+import Navbar from "../components/navbar.astro";
+import Button from "../components/button.astro";
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/container.astro";
+import { ArrowDownIcon } from "@radix-ui/react-icons";
 ---
 
 <Layout title="Industrias Carnicas DMarca">
-	<header class="bg-header-home h-screen flex flex-col items-center">
-		<Navbar/>
-        <Container class:list={["h-[calc(100vh-90px-120px)] flex flex-col items-center justify-center text-white text-center"]}>
-            <h2>Industrias Cárnicas</h2>
-            <h1 class="text-7xl font-bold sm:text-8xl">DMARCA</h1>
-            <p>El sabor de la tradición española</p>
-            <br>
-            <div class="flex items-center gap-2">
-                <a href="https://tienda.carnicasdmarca.com" target="_blank" rel="noopener noreferrer">
-                    <Button class:list={["hover:bri"]}>
-                        Tienda
-                    </Button>
-                </a>
-                <a href="https://tienda.carnicasdmarca.com" target="_blank" rel="noopener noreferrer">
-                    <Button class:list={["bg-red-600 text-white hover:brightness-110"]}>
-                        Nuestros productos
-                    </Button>
-                </a>
-            </div>
-        </Container>
-        <button class="text-white w-12 h-12 bg-white/20 rounded-full flex items-center justify-center transition-transform hover:scale-110">
-            <ArrowDownIcon width={"24px"} height={"24px"} />
-        </button>
-    </header>
+  <header class="bg-header-home bg-cover bg-center h-screen flex flex-col items-center">
+    <Navbar />
+    <Container
+      class:list={[
+        "h-[calc(100vh-90px-120px)] flex flex-col items-center justify-center text-white text-center",
+      ]}
+    >
+      <h2>Industrias Cárnicas</h2>
+      <h1 class="text-7xl font-bold sm:text-8xl">DMARCA</h1>
+      <p>El sabor de la tradición española</p>
+      <br />
+      <div class="flex items-center gap-2">
+        <a
+          href="https://tienda.carnicasdmarca.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button class:list={["hover:bri"]}>Tienda</Button>
+        </a>
+        <a
+          href="https://tienda.carnicasdmarca.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button class:list={["bg-red-600 text-white hover:brightness-110"]}>
+            Nuestros productos
+          </Button>
+        </a>
+      </div>
+    </Container>
+    <button
+      class="text-white w-12 h-12 bg-white/20 rounded-full flex items-center justify-center transition-transform hover:scale-110"
+    >
+      <ArrowDownIcon width={"24px"} height={"24px"} />
+    </button>
+  </header>
+  <main class="relative bg-about-home bg-center xl:bg-none xl:bg-neutral-900">
+    <Container class:list={["h-[554px] flex flex-col justify-center text-white gap-5 z-10 relative text-center items-center xl:items-start xl:text-left"]}>
+      <h3 class="text-3xl font-bold">¿Quienes somos?</h3>
+      <p class="text-lg sm:text-xl max-w-xl text-neutral-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+        augue efficitur, posuere metus sit amet, ullamcorper diam. Nulla mauris
+        velit, bibendum non turpis a, tristique vulputate magna. Phasellus mi
+        enim, faucibus nec condimentum a, condimentum vel augue. Quisque at
+        sapien ut elit feugiat vehicula.
+      </p>
+    </Container>
+    <svg class="hidden absolute top-0 right-0 h-full z-0 xl:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 732 554" fill="none">
+        <path d="M382 0H732V554H0.5L382 0Z" fill="url(#pattern0)"/>
+        <path d="M382 0H732V554H0.5L382 0Z" fill="url(#paint0_linear_10_92)" fill-opacity="0.69"/>
+        <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_10_92" transform="matrix(0.000504899 0 0 0.000666667 -0.00489861 0)"/>
+          </pattern>
+          <linearGradient id="paint0_linear_10_92" x1="238.5" y1="217" x2="732" y2="554" gradientUnits="userSpaceOnUse">
+            <stop/>
+            <stop offset="0.151934" stop-opacity="0.69"/>
+            <stop offset="1" stop-opacity="0"/>
+          </linearGradient>
+          <image id="image0_10_92" width="2000" height="1500" xlink:href="/background-about.jpeg"/>
+        </defs>
+      </svg>
+  </main>
 </Layout>
-	
