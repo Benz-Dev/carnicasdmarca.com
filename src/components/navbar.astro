@@ -5,7 +5,7 @@ import {HamburgerMenuIcon} from "@radix-ui/react-icons";
 ---
 
 <div class="text-white w-full">
-    <Container class:list={["h-[90px] flex items-center justify-between"]}>
+    <Container class:list={["h-[90px] flex items-center justify-center md:justify-between"]}>
         <img class="h-16 object-fill" src="/logo.png" alt="">
         <nav class="hidden gap-10 items-center text-sm font-medium md:flex">
             <!-- <a href="/">Inicio</a>
@@ -17,8 +17,8 @@ import {HamburgerMenuIcon} from "@radix-ui/react-icons";
                 </Button>
             </a>
         </nav>
-        <button class="p-3 md:hidden ">
+        <!-- <button class="p-3 md:hidden ">
             <HamburgerMenuIcon width="23px" height={"23px"}/>
-        </button>
+        </button> -->
     </Container>
 </div>
