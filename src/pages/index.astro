@@ -24,20 +24,21 @@ import { ArrowDownIcon } from "@radix-ui/react-icons";
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button class:list={["hover:bri"]}>Tienda</Button>
+          <Button title="Accede a nuestra tienda" class:list={["hover:bri"]}>Tienda</Button>
         </a>
         <a
           href="https://tienda.carnicasdmarca.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button class:list={["bg-red-600 text-white hover:brightness-110"]}>
+          <Button title="Visualice nuestro catalogo de productos" class:list={["bg-red-600 text-white hover:brightness-110"]}>
             Nuestros productos
           </Button>
         </a>
       </div>
     </Container>
     <button
+      title="Baja hasta la siguiente seccion"
       class="text-white w-12 h-12 bg-white/20 rounded-full flex items-center justify-center transition-transform hover:scale-110"
     >
       <ArrowDownIcon width={"24px"} height={"24px"} />
@@ -70,4 +71,5 @@ import { ArrowDownIcon } from "@radix-ui/react-icons";
         </defs>
       </svg>
   </main>
+
 </Layout>
